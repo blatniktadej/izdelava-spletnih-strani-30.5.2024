@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spletna stran</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial,sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+        header{
+            text-align: center;
+            width: 100%;
+            font-size: 40px;
+            background-color: #333333;
+            padding: 20px 0;
+            color: white;
+
+        }
+        .main{
+            display: flex;
+        }
+        .levi{
+            width: 33.3%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .desni{
+            width: 67.7%;
+            border:1px solid #f9c6c6;
+        }
+        .storitve{
+            padding: 15px;
+            margin: 10px 0px;
+            background-color: #cccccc;
+            height: 150px;
+            font-size: 20px;
+            position: relative;
+            transition: background-color 0.3s,padding-left 0.3s;
+
+        }
+        .levi div img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            opacity: 0.5;
+        }
+    
+        .tehp{
+            padding: 2rem;
+            background-color: #6d5454;
+            height: 100px;
+            font-size: 20px;
+        }
+        .programiranje{
+            padding: 2rem;
+            background-color: #877b7b;
+            height: 100px;
+            font-size: 20px;
+        }
+        .sisv{
+            padding: 2rem;
+            background-color: #bdbaba;
+            height: 100px;
+            font-size: 20px;
+        }
+        .seznam{
+            text-align: center;
+        }
+        ol,li{
+            display: inline-block;
+
+        }
+        .storitve:hover,.tehp:hover,.programiranje:hover,.sisv:hover{
+            background-color: bisque;
+            padding-left: 20px;
+        }
+        nav{
+            background-color: #444444;
+            color: whitesmoke;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0px 15px;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Poklicna matura</header> 
+    <nav>
+        <a href="#">Domov</a>
+        <a href="#">O nas</a>
+        <a href="#">Storitve</a>
+        <a href="#">Kontakt</a>
+    </nav>
+    <div class="main">
+        <div class="levi">
+            <div class="storitve">
+                <img src="https://source.unsplash.com/300x200/?services" alt=""><span>Storitve</span></div>
+            <div class="tehp">Tehnična podpora</div>
+            <div class="programiranje">Programiranje</div>
+            <div class="sisv">Sistemsko Vzdrževanje</div>
+        </div>
+        <div class="desni">RIC matura je zakon!</div>
+    </div>
+    <footer>
+        <div class="seznam">
+            <ol>
+            <li>CPI</li>
+            <li>RIC</li>
+            <li>MIZŠ</li>
+            </ol>
+        </div>
+    </footer>
+    
+</body>
+</html>
